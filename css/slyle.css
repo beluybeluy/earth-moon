@@ -1,0 +1,57 @@
+body {
+   background: url(../img/space.jpg);
+}
+
+.earth {
+   height: 350px;
+   position: relative;
+   top: 150px;
+   left: 220px;
+   z-index: 1;
+}
+
+.moon {
+   position: absolute;
+   top: 260px;
+   left: 320px;
+   height: 160px;
+   animation: orbita 6s linear infinite;
+   z-index: 0;
+}
+
+@keyframes orbita {
+   0% {
+      height: ;
+      top: ;
+      left: ;
+   }
+   25% {
+      top: 170px;
+      left: 570px;
+      height: 100px;
+      z-index: 0;
+   }
+   37% {
+      z-index: 2;
+   }
+   50% {
+      z-index: 2;
+      top: 270px;
+      left: 300px;
+      height: 180px;
+   }
+   75% {
+      top: 380px;
+      left: 130px;
+      height: 100px;
+   }
+   80% {
+      z-index: 0;
+   }
+   100% {
+      height: ;
+      left: 320px;
+      top: 260px;
+      transform: rotate(360deg);
+   }
+}
